@@ -9,14 +9,17 @@ sections:
 - type: directory
   path: content/portfolio
   label: Portfolio
-  create: none
+  create: documents
   match: "*"
+  templates:
+  - post
 - type: directory
   path: content/blog
   label: Post
   create: documents
   match: "*"
   templates:
+  - post
   - post
 - type: directory
   path: content/about
@@ -29,6 +32,8 @@ sections:
   create: documents
   match: "*"
   new_doc_ext: yml
+  templates:
+  - post
 - type: directory
   path: content/contact
   label: Contact
